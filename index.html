@@ -11,47 +11,80 @@
     <div id="logo">会社ロゴ</div>
     <nav>
       <ul>
-        
-        <li><a href="#top">TOP<br><span class="header-word">メインページ</span></a>  
+        <li><a href="../index.html">TOP<br><span class="header-word">メインページ</span></a>  
          </li>
-        <li><a href="#service">service<br><span class="header-word">事業内容</span></a>  
+        <li><a href="/sub_page/business_details.html">service<br><span class="header-word">事業内容</span></a>  
          </li>
-         <li><a href="#company">company<br><span class="header-word">会社概要</span></a>  
+         <li><a href="/sub_page/company.html">company<br><span class="header-word">会社概要</span></a>  
          </li>
-         <li><a href="#contact">contact<br><span class="header-word">お問い合わせ</span></a>  
+         <li><a href="/sub_page/contact_us.html">contact<br><span class="header-word">お問い合わせ</span></a>  
          </li>
-        
       </ul>
     </nav>
   </header>
-
   <!-- ヒーローイメージ！！！！ -->
   <section id="hero">
-    <img src="/img/cat.jpeg" alt="ヒーローイメージ">
+    <div class="insert-text">
+        <div class="overlay">
+        <h3>会社紹介</h3>
+        <p>キャッチコピー</p>
+      </div>
+    </div>
   </section>
+<!-- 簡単な事業紹介 -->
+<section id="services" class="fancy-section">
+  <div class="container">
+    <div class="service-title">
+      <span class="line"></span>
+      <h2>About Us<br><p>企業理念</p></h2>
+      <span class="line"></span>
+    </div>
+    <div class="contents">
+      <div class="text-content">
+        <p>
+          お客様第一: お客様の満足と信頼を最優先に考え、質の高いサービスを提供します。
+<br>持続可能な成長: 環境、社会、ガバナンス（ESG）に配慮し、持続可能な成長を目指します。
+<br>イノベーション: 常に革新的な発想で事業を進化させ、業界のリーダーであり続けます。
+<br>誠実と透明性: すべてのステークホルダーに対して誠実かつ透明なコミュニケーションを心掛けます。
+<br>チームワーク: 社内外の多様な人々と協力し、共に高い目標に挑戦します。
+        </p>
 
-  <!-- 簡単な会社紹介 -->
-  <section id="about">
-    <h2>会社紹介</h2>
-    <p>ここに簡単な会社紹介を書く。</p>
-  </section>
+      </div>
+      <div class="image-content">
+        <img src="/img/green.webp">
 
-  <!-- 簡単な事業紹介 -->
-  <section id="services">
-    <h2>事業紹介</h2>
-    <div class="service-item">
-      <h3>事業1</h3>
-      <p>事業1についての説明。</p>
+      </div>
     </div>
-    <div class="service-item">
-      <h3>事業2</h3>
-      <p>事業2についての説明。</p>
+    <div class="service-title">
+      <span class="line"></span>
+      <h2>三つの事業を展開<br><p>Web戦略</p></h2>
+      <span class="line"></span>
+  </div>
+    <div class="card-container">
+      <div class="service-card">
+        <a href="/sub_page/business_details.html">
+        <h3 class="fancy-subtitle">MEO事業</h3>
+        <p class="fancy-desc">Google Mapの表示順位が上がります。</p>
+        </a>
+      </div>
+      <div class="service-card">
+        <a href="/sub_page/business_details.html">
+        <h3 class="fancy-subtitle">SNS事業</h3>
+        <p class="fancy-desc">SNSの代理運用で新たな顧客を獲得します。</p>
+        </a>
+      </div>
+      <div class="service-card">
+        <a href="/sub_page/business_details.html">
+        <h3 class="fancy-subtitle">HP制作</h3>
+        <p class="fancy-desc">洗練されたHPを開発します。</p>
+        </a>
+      </div>
     </div>
-    <div class="service-item">
-      <h3>事業3</h3>
-      <p>事業3についての説明。</p>
-    </div>
-  </section>
+  </div>
+</section>
+
+
+
 
   <!-- フッター -->
   <footer id="main-footer">
@@ -60,7 +93,6 @@
       <small>受付時間: 9:00-18:00</small>
     </div>
     <div class="footer-item">
-      <button id="email-button">メールのお問い合わせ</button>
       <small>〒100-0000 東京都中央区〇〇</small>
     </div>
   </footer>
