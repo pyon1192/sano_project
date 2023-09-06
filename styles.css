@@ -1,0 +1,111 @@
+/* 全体のマージンとパディングをリセット */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* フッターのスタイル */
+#main-footer {
+  width: 100%;  /* 横幅を100%に */
+}
+/* ヘッダー全体のスタイリング */
+#main-header {
+    background-color: rgba(101, 205, 75, 0.652);  /* メインテーマは緑 */
+    color: white;
+    position: fixed;  /* 画面上部に常に表示 */
+    top: 0;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+   /* ヘッダーロゴ部分のスタイリング */
+   #logo {
+    font-size: 24px;
+  }
+  
+
+  /* ヘッダーナビゲーションメニューのスタイリング */
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 10vw;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav ul li p {
+    margin-top: 0px;
+    font-size: 5px;
+  }
+
+  /* ナビゲーションメニューのホバー効果 */
+nav ul  :hover {
+    background-color: darkgreen;  /* 例: 背景色を暗い緑に */
+    color: white;  /* 文字色は白 */
+    border-radius: 5px;  /* 角を少し丸く */
+    padding: 5px;  /* パディングを適用 */
+  }
+  
+  
+ 
+  
+  /* ヒーローイメージ */
+#hero img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* 会社紹介 */
+  #about {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  /* 事業紹介 */
+  #services {
+    padding: 20px;
+  }
+  
+  .service-item {
+    margin-bottom: 20px;
+  }
+  
+  /* フッター全体のスタイリング */
+#main-footer {
+    width:100%;
+    background-color: #333;  /* 背景色は暗めに */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  /* フッター内の各要素のスタイリング */
+  .footer-item {
+    margin-bottom: 10px;
+  }
+  
+  /* メールボタンのスタイリング */
+  #email-button {
+    background-color: green;  /* メインテーマに合わせて緑 */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #email-button:hover {
+    background-color: darkgreen;  /* ホバー時の色 */
+  }
