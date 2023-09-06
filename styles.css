@@ -10,7 +10,7 @@ body, html {
 }
 /* ヘッダー全体のスタイリング */
 #main-header {
-    background-color: rgba(101, 205, 75, 0.652);  /* メインテーマは緑 */
+    background-color:white;  /* メインテーマは緑 */
     color: white;
     position: fixed;  /* 画面上部に常に表示 */
     top: 0;
@@ -24,25 +24,33 @@ body, html {
   }
    /* ヘッダーロゴ部分のスタイリング */
    #logo {
+    color:black;
     font-size: 24px;
   }
-  
-
   /* ヘッダーナビゲーションメニューのスタイリング */
   nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
+    height:8vh;
+  
+    
   }
   
-  nav ul li {
-    margin-left: 10vw;
-  }
   
+  nav ul li p{
+    color:rgba(101, 205, 75, 0.652);
+  }
   nav ul li a {
-    color: white;
+    color:rgba(101, 205, 75, 0.652);
     text-decoration: none;
+    display: block;
+    padding:1.5vh 1vw 1.5vh 1vw;
+  
+  }
+  nav ul li a span{
+    color:#888;
   }
   
   nav ul li p {
@@ -51,15 +59,22 @@ body, html {
   }
 
   /* ナビゲーションメニューのホバー効果 */
-nav ul  :hover {
-    background-color: darkgreen;  /* 例: 背景色を暗い緑に */
-    color: white;  /* 文字色は白 */
-    border-radius: 5px;  /* 角を少し丸く */
-    padding: 5px;  /* パディングを適用 */
+  nav ul li:hover {
+    background-color:#23AC38;  /* 背景色を暗い緑に */
+    color: white;  /* 文字色を白に */
+    
+  }
+  nav ul li:hover  .header-word{
+    
+    color: white;  /* 文字色を白に */
+    
   }
   
   
- 
+  /* テキストがリンクである場合、li要素がホバーされたらその色も変更 */
+  nav ul li:hover a {
+    color: white;
+  }
   
   /* ヒーローイメージ */
 #hero img {
