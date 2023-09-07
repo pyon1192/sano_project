@@ -313,63 +313,49 @@ h3, p {
   }
 
   /* お問い合わせフォームのスタイリング */
-  #contact {
-    background-color: #8dd990;
+  .contact-section {
+    background-color: #f0f0f0;
     padding: 30px;
-    margin: 20px auto;
-    max-width: 500px;
-    border-radius: 10px;
+    border-radius: 15px;
+    width: 300px;
+    margin: 0 auto;
     text-align: center;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-}
-
-/* タイトルのスタイル */
-#contact h1 {
-    font-size: 28px;
-    text-align: center;
+    font-family: 'Arial, sans-serif';
+  }
+  
+  .contact-section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
     color: #333;
-}
-
-/* フォームのスタイル */
-#contact form {
-    margin-top: 20px;
-}
-
-/* フォームのラベルと入力フィールドのスタイル */
-#contact label, #contact input, #contact textarea {
-    display: block;
+  }
+  
+  .form-group {
     margin-bottom: 15px;
+  }
+  
+  .form-group input, .form-group textarea {
     width: 100%;
-}
-
-#contact label {
-    font-weight: bold;
-}
-
-#contact input[type="text"],
-#contact input[type="email"],
-#contact textarea {
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-/* 送信ボタンのスタイル */
-#contact input[type="submit"] {
-    background-color: #37be64;
-    color: #fff;
-    padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     font-size: 16px;
-}
-
-/* 送信ボタンのホバースタイル */
-#contact input[type="submit"]:hover {
-    background-color: #0056b3;
-}
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5a67d8;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #434190;
+  }
   
   /* フッター全体のスタイリング */
 #main-footer {
