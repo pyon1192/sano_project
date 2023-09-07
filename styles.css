@@ -312,39 +312,48 @@ h3, p {
     margin-bottom: 20px;
   }
   /*ここから会社概要*/
-  #company-container{
-   
-  }
+  /*ここから会社概要*/
+  
   #company-info {
-    background-color:white;
-    padding: 20px;
+    background-color:#f0f0f0;
+    
     border: 1px solid #ccc;
-    margin-top: 20px;
-    width: 50%;
+    
+    width: 100%;
+    margin-top: 7vh;
+    margin-bottom: 7vh;
     color:black;
     
+    
   }
+  
+  .kaisha {
+    width: 50%;
+    margin: 0 auto;
+    padding-top:5vh;
+    padding-bottom: 5vh;
 
-#company-info h2 {
-    font-size: 24px;
-    text-align: center;
-}
+    background-color:#f0f0ee ;
+    }
+    
+    .kaisha th,
+    .kaisha td {
+    border: 1px solid #ccc;
+    padding: 20px;
+    }
+    
+    .kaisha th {
+    font-weight: bold;
+    background-color: white; 
+    }
+    .kaisha tr{
+      background-color: white;
+    }
 
-#company-info ul {
-    list-style-type: none;
-    padding: 0;
-}
+  
 
-#company-info ul li {
-    margin-top: 5vh;
-    text-align: center; /* テキストを中央に寄せる */
-    border-bottom: 1px solid #f0f0f0; /* 白いボーダーラインを追加 */
-    padding-bottom: 5px; /* ボーダーラインとテキストの間にスペースを追加 */
-}
-#company-info ul li strong {
-  padding-right: 2vw; /* "key" と "value" の間に10pxの余白を追加 */
-}
-
+      
+    
   /* お問い合わせフォームのスタイリング */
   .contact-section {
     background-color: #f8f9fa;
