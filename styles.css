@@ -345,6 +345,10 @@ h3, p {
 
     background-color:#f0f0ee ;
     }
+    @media(max-width:480px){
+      
+      
+    }
     
     .kaisha th,
     .kaisha td {
