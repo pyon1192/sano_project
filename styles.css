@@ -25,7 +25,7 @@ h3, p {
     position: fixed;  /* 画面上部に常に表示 */
     top: 0;
     width: 100%;
-    height: 8vh;
+    height: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,7 +44,7 @@ h3, p {
     margin: 0;
     padding: 0;
     display: flex;
-    height:8vh;
+    height:10vh;
   }
   
   
@@ -67,13 +67,24 @@ h3, p {
     margin-top: 0px;
     font-size: 5px;
   }
-
+  nav ul li {
+    transition: background-color 0.7s ease;
+  }
+  
+  nav ul li a, nav ul li a .header-word {
+    transition: color 0.7s ease;
+  }
+  
   /* ナビゲーションメニューのホバー効果 */
   nav ul li:hover {
-    background-color:#23AC38;  /* 背景色を暗い緑に */
-    color: white;  /* 文字色を白に */
-    
+    background-color: #23AC38;  /* 背景色を暗い緑に */
   }
+  
+  nav ul li:hover a, nav ul li:hover a .header-word {
+    color: white;  /* 文字色を白に */
+  }
+  
+ 
   nav ul li:hover  .header-word{ 
     color: white;  /* 文字色を白に */
   }
@@ -240,9 +251,10 @@ h3, p {
   display: flex;
 }
 .image-content{
-  width: 50%;
-  height: auto;
+  width: 100%;
+  height: 100%;
   background-size: cover;
+  box-shadow: black 3px;
 }
   /* 事業内容のスタイリング */
 #services {
@@ -271,7 +283,9 @@ h3, p {
   color: rgb(53, 192, 85);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
-
+.company-image{
+  box-shadow: 10px 10px 5px gray;
+}
 
 /* 線を描くspan */
 .line {
