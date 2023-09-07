@@ -347,48 +347,130 @@ h3, p {
 
   /* お問い合わせフォームのスタイリング */
   .contact-section {
-    background-color: #f0f0f0;
-    padding: 30px;
+    background-color: #f8f9fa;
+    padding: 40px;
     border-radius: 15px;
-    width: 300px;
-    margin: 0 auto;
+    width: 350px;
+    margin: 40px auto;
     text-align: center;
     font-family: 'Arial, sans-serif';
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   }
   
   .contact-section h2 {
     margin-bottom: 20px;
     font-size: 24px;
-    color: #333;
+    color: #343a40;
   }
   
   .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    position: relative;
   }
   
   .form-group input, .form-group textarea {
     width: 100%;
-    padding: 10px;
-    border: none;
+    padding: 15px;
+    border: 1px solid #ced4da;
     border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+  }
+  
+  .form-group input:focus, .form-group textarea:focus {
+    border-color: #5a67d8;
   }
   
   button {
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     border: none;
     border-radius: 5px;
-    background-color: #5a67d8;
+    background-color: #61b64c;
     color: white;
     font-size: 16px;
     cursor: pointer;
+    transition: background-color 0.3s;
   }
   
   button:hover {
-    background-color: #434190;
+    background-color: #37712f;
   }
+
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+.contact-section h2, .privacy-policy h2 {
+  margin-bottom: 20px;
+  font-size: 36px; /* フォントサイズをさらに大きく */
+  color: #44b746; /* テキスト色を白に */
+  text-align: center; /* センタリング */
+  font-weight: bold; /* 太字に */
+  position: relative; /* 背景色を追加するための基準点となる */
+  font-family: 'Playfair Display', serif; /* カスタムフォントを使用 */
+  text-transform: uppercase; /* 大文字に */
+  letter-spacing: 2px; /* 文字間隔を広げる */
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3); /* テキストシャドウを追加 */
+}
+
+.contact-section h2::after, .privacy-policy h2::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  width: 25vw; /* 線の幅を調整 */
+  background: linear-gradient(45deg, #5a67d8, #667eea, #764ba2); /* グラデーション背景を追加 */
+  border-radius: 5px; /* 角を丸く */
+}
+
+
+  .privacy-policy {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: 'Arial, sans-serif';
+  }
+  
+  .privacy-policy h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .privacy-policy p {
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .privacy-policy ul {
+    padding-left: 20px;
+    color: #666;
+  }
+  
+  .privacy-policy ul li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+  
+  .privacy-policy a {
+    color: #5a67d8;
+    text-decoration: none;
+  }
+  
+  .privacy-policy a:hover {
+    text-decoration: underline;
+  }
+
+  .contact-container{
+    display: flex;
+  }
+  
+  
+  
   
   /* フッター全体のスタイリング */
 #main-footer {
