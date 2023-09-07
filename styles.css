@@ -4,6 +4,9 @@ body, html {
   padding: 0;
 }
 
+.all-content {
+  overflow:hidden;
+}
 /* 基本的なスタイリング */
 body {
   overflow-x: hidden;
