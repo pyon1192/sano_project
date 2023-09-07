@@ -17,7 +17,11 @@ body {
 h3, p {
   margin: 0; 
 }
-
+@media screen and (max-width:480){
+  nav ul { 
+    display: none;
+  }
+}
 /* ヘッダー全体のスタイリング */
 #main-header {
     background-color: rgba(199, 255, 179, 0.842);   /* メインテーマは緑 */
@@ -69,6 +73,7 @@ h3, p {
   }
   nav ul li {
     transition: background-color 0.7s ease;
+    padding:0, 10px, 0;
   }
   
   nav ul li a, nav ul li a .header-word {
@@ -264,7 +269,8 @@ h3, p {
 }
 
 #services img{
-  width: 50%;
+  margin:10px;
+  width: 50vw;
   height: auto;
 }
 
@@ -312,8 +318,9 @@ h3, p {
     margin-bottom: 20px;
   }
   /*ここから会社概要*/
-  /*ここから会社概要*/
-  
+  #company-container{
+   
+  }
   #company-info {
     background-color:#f0f0f0;
     
@@ -478,17 +485,14 @@ h3, p {
     display: flex;
   }
   
-  
-  
-  
   /* フッター全体のスタイリング */
 #main-footer {
     position: absolute;
     left: 0;
+    right: 0;
     width:100%;
     background-color: #333;  /* 背景色は暗めに */
     color: white;
-    padding: 20px;
     text-align: center;
     box-sizing: border-box;
   }
@@ -499,20 +503,165 @@ h3, p {
   }
 
   /* レスポンシブ対応 */
-@media (max-width: 768px) {
-  .service-card {
-    width: calc(50% - 40px);
+
+@media only screen and (max-width: 480px){
+  .contact-container {
+    flex-direction: column ;
+  }
+
+  .image-content{
+    width: 100%;
+  }
+  
+  .privacy-policy h2{
+    font-size: 24px;
+    width: 100%;
+  }
+
+}
+/* ... (その他のスタイル) ... */
+
+
+@media (max-width: 480px) {
+  .card-container {
+      flex-direction: column; /* カードを縦並びにします */
+      align-items: center; /* カードを中央に配置します */
+      width: 100%;
+  }
+
+  .card-container .service-card {
+      margin-bottom: 20px; /* カードの下に余白を追加します */
+      width: 100%; /* カードの幅を100%にします */
+      box-sizing: border-box; /* パディングとボーダーを幅と高さに含めます */
   }
 }
 
-@media (max-width: 480px) {
-  .service-card {
-    width: 100%;
-    margin: 20px 0;
+ .sp-nav {
+  display: none;
+ }
+
+  @media screen  and (max-width: 480px) {
+
+  .pc-nav {
+    display: none;
   }
+
+  #hamburger {
+   position: relative;
+   display: block;
+   width: 30px;
+   height: 25px;
+   margin: 0 0 0 auto;
 }
+
+#hamburger span {
+   position: absolute;
+   top: 50%;
+   left: 0;
+   display: block;
+   width: 100%;
+   height: 2px;
+   background-color: #fff;
+   transform: translateY(-50%);
+}
+
+#hamburger::before {
+   content: '';
+   display: block;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 2px;
+   background-color: #fff;
+}
+#hamburger::after {
+   content: '';
+   display: block;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 70%;
+   height: 2px;
+   background-color: #fff;
+}
+
+.sp-nav {
+   z-index: 1;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100vh;
+   display: block;
+   width: 100%;
+   background: rgba(0, 0, 0, .8);
+   transition: all .2s ease-in-out;
+    opacity: 0;
+   transform: translateY(-100%);
+}
+
+.sp-nav ul {
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+}
+.sp-nav li {
+   margin: 0;
+   padding: 0;
+}
+.sp-nav li span {
+   font-size: 15px;
+   color: #fff;
+}
+.sp-nav li a, .sp-nav li span {
+   display: block;
+   text-align:center ;
+   padding: 20px 20vw;
+}
+
+.sp-nav .close {
+   position: relative;
+   padding-left: 20px;
+}
+/*バツ印線1*/
+.sp-nav .close::before {
+   content: '';
+   position: absolute;
+   top: 50%;
+   left: 0;
+   display: block;
+   width: 16px;
+   height: 1px;
+   background: #fff;
+   transform: rotate( 45deg );
+}
+/*バツ印線2*/
+.sp-nav .close::after {
+   content: '';
+   position: absolute;
+   top: 50%;
+   left: 0;
+   display: block;
+   width: 16px;
+   height: 1px;
+   background: #fff;
+   transform: rotate( -45deg );
+}
+.toggle {
+   transform: translateY( 0 );
+   opacity: 1;
+}
+  }
+
+
   
-  
+ 
+
+
 
 
 
