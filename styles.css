@@ -312,13 +312,18 @@ h3, p {
     margin-bottom: 20px;
   }
   /*ここから会社概要*/
+  #company-container{
+   
+  }
   #company-info {
-    background-color: #f0f0f0;
+    background-color:white;
     padding: 20px;
     border: 1px solid #ccc;
     margin-top: 20px;
+    width: 50%;
     color:black;
-}
+    
+  }
 
 #company-info h2 {
     font-size: 24px;
@@ -333,7 +338,7 @@ h3, p {
 #company-info ul li {
     margin-top: 5vh;
     text-align: center; /* テキストを中央に寄せる */
-    border-bottom: 1px solid white; /* 白いボーダーラインを追加 */
+    border-bottom: 1px solid #f0f0f0; /* 白いボーダーラインを追加 */
     padding-bottom: 5px; /* ボーダーラインとテキストの間にスペースを追加 */
 }
 #company-info ul li strong {
