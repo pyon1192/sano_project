@@ -311,6 +311,34 @@ h3, p {
   .service-item {
     margin-bottom: 20px;
   }
+  /*ここから会社概要*/
+  #company-info {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    color:black;
+}
+
+#company-info h2 {
+    font-size: 24px;
+    text-align: center;
+}
+
+#company-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#company-info ul li {
+    margin-top: 5vh;
+    text-align: center; /* テキストを中央に寄せる */
+    border-bottom: 1px solid white; /* 白いボーダーラインを追加 */
+    padding-bottom: 5px; /* ボーダーラインとテキストの間にスペースを追加 */
+}
+#company-info ul li strong {
+  padding-right: 2vw; /* "key" と "value" の間に10pxの余白を追加 */
+}
 
   /* お問い合わせフォームのスタイリング */
   .contact-section {
